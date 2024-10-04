@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+</head>
+<body>
+    <h1>Disease Prediction</h1>
+    <form action="/result" method="post">
+        <label for="symptoms">Enter Symptoms:</label><br>
+        <textarea id="symptoms" name="symptoms" rows="4" cols="50"></textarea><br>
+        <label for="model_type">Choose Model Type:</label>
+        <select id="model_type" name="model_type">
+            <option value="lstm">LSTM</option>
+            <option value="decision_tree">Decision Tree</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
